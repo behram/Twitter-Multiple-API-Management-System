@@ -1,0 +1,81 @@
+<?php
+
+namespace Acme\TwitterBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * SysTweets
+ *
+ * @ORM\Table(name="sys_tweets")
+ * @ORM\Entity
+ */
+class SysTweets
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="e_id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $eId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="head", type="string", length=100, nullable=false)
+     */
+    private $head;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="content", type="string", length=200, nullable=false)
+     */
+    private $content;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="is_online", type="integer", nullable=false)
+     */
+    private $isOnline;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="add_time", type="integer", nullable=false)
+     */
+    private $addTime;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="total_publish", type="integer", nullable=false)
+     */
+    private $totalPublish;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="creator", type="string", length=50, nullable=false)
+     */
+    private $creator;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="image", type="string", length=100, nullable=false)
+     */
+    private $image;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="extra_info", type="string", length=200, nullable=false)
+     */
+    private $extraInfo;
+
+
+}

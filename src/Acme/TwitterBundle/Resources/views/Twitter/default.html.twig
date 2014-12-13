@@ -1,0 +1,53 @@
+{% extends '::home.html.twig' %}
+{% block content %}
+<div class="col-xs-1"></div>
+<div class="col-xs-10 marginIt backColor">
+		
+		<div class="col-xs-1"></div>
+		<div class="col-xs-10 text-center siteHead">
+
+			{{ setting.homeEntryPla | raw}}
+		</div>
+		<div class="col-xs-1"></div>
+
+		<div class="col-xs-6">
+            <img src="http://2.bp.blogspot.com/-2QJek1lS-ns/Us5v8AFIHcI/AAAAAAAAAEQ/9j_YmtPpJO0/s1600/Twitter_bird_wSigns.png" style="margin-left : 15px;">
+        </div>
+
+        <div class="col-xs-5 listA">
+            <ul class="list-group">
+            <h3>Özellikler :</h3>
+			  <li class="list-group-item">Spamsız organik kullanıcılar</li>
+			  <li class="list-group-item">Twitter profilinle saniyeler içinde giriş yap</li>
+			  <li class="list-group-item">Takipçi kazanmak için kolay panel</li>
+			  <li class="list-group-item">Sadece gerçek takipçiler</li>
+			  <li class="list-group-item">Sadece siz odaklı takipçi</li>
+			  <li class="list-group-item">İlgi alanına göre kişi ve takipçiler.</li>
+			</ul>
+        </div>
+        <div class="col-xs-1"></div>
+
+
+</div>
+<div class="col-xs-1"></div>
+
+<div class="row">
+<div class="col-xs-12">
+
+<div class="col-xs-1"></div>
+<div class="col-xs-10 backColor">
+	<div class="col-xs-4"></div>
+	<div class="col-xs-4">
+
+		<a href="{{ path("acme_homepage_connect") }}"><button type="button" class="btn btn-info btn-lg btn-block loginBut">Login With Twitter</button></a>
+		</div>
+	<div class="col-xs-4"></div>	
+</div>
+<div class="col-xs-1"></div>
+</div>
+
+
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Acme\TwitterBundle\Entity\PacketRequest" table="packet_request">
+    <id name="eid" type="integer" column="eid">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="userMail" type="string" column="user_mail" length="50" nullable="true"/>
+    <field name="packetId" type="integer" column="packet_id" nullable="false"/>
+    <field name="paypalMail" type="string" column="paypal_mail" length="50" nullable="false"/>
+    <field name="insertTime" type="integer" column="insert_time" nullable="false"/>
+    <field name="isFinish" type="integer" column="is_finish" nullable="false"/>
+    <field name="processValue" type="string" column="process_value" length="200" nullable="false"/>
+    <field name="sentTime" type="integer" column="sent_time" nullable="false"/>
+    <field name="paymentMail" type="string" column="payment_mail" length="50" nullable="false"/>
+    <field name="packetType" type="string" column="packet_type" length="30" nullable="false"/>
+    <field name="userTwitterName" type="string" column="user_twitter_name" length="60" nullable="true"/>
+    <field name="sendedTweetId" type="integer" column="sended_tweet_id" nullable="true"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,62 @@
+{% extends '::home.html.twig' %}
+{% block content %}
+<div class="row">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10">
+        <div class="infoBox">
+            <div class="formHead">
+                <span>{{ sdata.home.head.toInfo }}</span>
+            </div>
+            <ul class="list-group">
+              {{ setting.takeRetInfos |raw }}
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-1"></div>
+</div>
+
+<div class="row">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10">
+
+
+        <div class="anaDiv">
+            <div class="formDiv">
+                <div class="formHead"><span> {{ sdata.home.head.takeRet }}  </span></div>
+                <form class="formClass" method="post" action="{{ path("acme_packet_request") }}">
+                    {% if error is defined %}
+                        <div class="errorMessage"> {{ error.text }} </div>
+                    {% endif %}
+                    
+                    <label>{{ sdata.home.form.packetType }}</label><br>
+                    <select name="packetType">
+                        {% for v in follow_packets%}
+                            <option value="{{ v.eid }}">{{ v.miktar ~ " Retweet " ~ v.tlKarsiligi ~ " TL"  }}</option>
+                        {% endfor %}
+                    </select>
+                    
+                    <label>{{ sdata.home.form.payMail }}</label><br>
+                    <input type="text" name="userPaypalMail">
+                    
+                    <label> {{ sdata.home.form.tweetId }} </label><br>
+                    <input type="text" name="processValue">
+                    
+                    <input type="hidden" value="{{ path("acme_take_retweet") }}" name="returnUrl">
+                    
+                    <input type="submit" value="{{ sdata.home.form.payWithPay }}">
+                    
+                </form>    
+            </div>
+            <div class="imageDiv">
+                <div class="imageContent">
+                    <img src="http://www.ciftlikdergisi.com.tr/wp-content/uploads/2014/03/twitter-follow.png" class="contentImage"/>
+                </div>
+            </div>
+        </div>
+
+
+
+    <div class="col-xs-1"></div>
+    </div>
+    
+{% endblock %}

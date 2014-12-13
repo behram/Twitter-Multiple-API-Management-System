@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Acme\TwitterBundle\Entity\SysSettings" table="sys_settings">
+    <id name="eId" type="integer" column="e_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="adminUser" type="string" column="admin_user" length="255" nullable="false"/>
+    <field name="adminPass" type="string" column="admin_pass" length="255" nullable="false"/>
+    <field name="siteTitle" type="string" column="site_title" length="200" nullable="false"/>
+    <field name="siteHeader" type="string" column="site_header" length="200" nullable="false"/>
+    <field name="siteFooter" type="string" column="site_footer" length="200" nullable="false"/>
+    <field name="normalKredi" type="integer" column="normal_kredi" nullable="false"/>
+    <field name="paypalMail" type="string" column="paypal_mail" length="200" nullable="false"/>
+    <field name="otoTweet" type="string" column="oto_tweet" length="300" nullable="false"/>
+    <field name="otoFollowHesap" type="string" column="oto_follow_hesap" length="300" nullable="false"/>
+    <field name="sysOnline" type="integer" column="sys_online" nullable="false"/>
+    <field name="paketOnline" type="integer" column="paket_online" nullable="false"/>
+    <field name="facebookPage" type="string" column="facebook_page" length="300" nullable="true"/>
+    <field name="twitterPage" type="string" column="twitter_page" length="300" nullable="true"/>
+    <field name="tumblrPage" type="string" column="tumblr_page" length="300" nullable="true"/>
+    <field name="googlePage" type="string" column="google_page" length="300" nullable="true"/>
+    <field name="mainApi" type="integer" column="main_api" nullable="false"/>
+    <field name="sysLan" type="string" column="sys_lan" length="10" nullable="true"/>
+    <field name="siteKeys" type="string" column="site_keys" length="300" nullable="false"/>
+    <field name="favicon" type="string" column="favicon" length="200" nullable="false"/>
+    <field name="googleAnal" type="text" column="google_anal" nullable="false"/>
+    <field name="siteLogo" type="string" column="site_logo" length="200" nullable="false"/>
+    <field name="siteTitleBro" type="string" column="site_title_bro" length="70" nullable="false"/>
+    <field name="siteDesc" type="text" column="site_desc" nullable="false"/>
+    <field name="copyPlace" type="string" column="copy_place" length="300" nullable="false"/>
+    <field name="homeEntryPla" type="string" column="home_entry_pla" length="300" nullable="false"/>
+    <field name="logWithTwitterBut" type="string" column="log_with_twitter_but" length="250" nullable="false"/>
+    <field name="siteFea1" type="string" column="site_fea_1" length="80" nullable="false"/>
+    <field name="siteFea2" type="string" column="site_fea_2" length="80" nullable="false"/>
+    <field name="siteFea3" type="string" column="site_fea_3" length="80" nullable="false"/>
+    <field name="siteFea4" type="string" column="site_fea_4" length="80" nullable="false"/>
+    <field name="siteFea5" type="string" column="site_fea_5" length="80" nullable="false"/>
+    <field name="siteFea6" type="string" column="site_fea_6" length="80" nullable="false"/>
+    <field name="siteFea7" type="string" column="site_fea_7" length="80" nullable="false"/>
+    <field name="siteFea8" type="string" column="site_fea_8" length="80" nullable="false"/>
+    <field name="takeCreInfos" type="text" column="take_cre_infos" nullable="false"/>
+    <field name="takeFolInfos" type="text" column="take_fol_infos" nullable="false"/>
+    <field name="takeRetInfos" type="text" column="take_ret_infos" nullable="false"/>
+    <field name="takeTweInfos" type="text" column="take_twe_infos" nullable="false"/>
+  </entity>
+</doctrine-mapping>

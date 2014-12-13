@@ -1,0 +1,154 @@
+{% extends '::index.html.twig' %}
+{% block title %}
+	{{ sdata.panel.title.system }}
+{% endblock %}
+	{% block content %}
+		<div class="breadcrumbs" id="breadcrumbs">
+			<script type="text/javascript">
+				try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+			</script>
+
+			<ul class="breadcrumb">
+				<li>
+					<i class="icon-home home-icon"></i>
+					<a href="{{ path('acme_panel_homepage') }}">{{ sdata.panel.menu.dash }}</a>
+				</li>
+
+				<li class="active">
+					{{ sdata.panel.menu.system }}
+				</li>
+			</ul><!-- .breadcrumb -->
+
+			<div class="nav-search" id="nav-search">
+				<form class="form-search">
+					<span class="input-icon">
+						<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off">
+						<i class="icon-search nav-search-icon"></i>
+					</span>
+				</form>
+			</div><!-- #nav-search -->
+		</div>
+
+		<div class="page-content">
+			<div class="row">
+				<div class="col-xs-12">
+					<h3 class="header smaller lighter blue">{{ sdata.panel.head.systemPos }}</h3>
+
+					<div class="alert alert-block alert-success">
+						<button type="button" class="close" data-dismiss="alert">
+							<i class="icon-remove"></i>
+						</button>
+
+						<i class="icon-ok green"></i>
+
+						{{ sdata.panel.mess.systemUp }}
+					</div>
+					<div class="col-xs-4"></div>
+					<div class="col-xs-4">
+						<button class="btn btn-block btn-danger" >
+							<i class="icon-ban-circle align-top bigger-100"></i>
+							{{ sdata.panel.form.stopSystem }}
+						</button>
+					</div>
+					<div class="col-xs-4"></div>
+				</div>
+
+				<div class="col-xs-12">
+					<h3 class="header smaller lighter blue">{{ sdata.panel.head.systemPos }}</h3>
+
+					<div class="alert alert-block alert-danger">
+						<button type="button" class="close" data-dismiss="alert">
+							<i class="icon-remove"></i>
+						</button>
+
+						<i class="icon-remove red"></i>
+
+						{{ sdata.panel.mess.systemDown }}
+					</div>
+					<div class="col-xs-4"></div>
+					<div class="col-xs-4">
+						<button class="btn btn-block btn-success" >
+							<i class="icon-ok align-top bigger-100"></i>
+							{{ sdata.panel.form.startSystem }}
+					</button>
+					</div>
+					<div class="col-xs-4"></div>
+				</div>
+
+				<h3 class="header smaller lighter blue"> {{ sdata.panel.head.genPages }} </h3>
+				<form class="form-horizontal" role="form">
+					<div class="clearfix form-actions">
+						<div class="alert alert-block alert-info">
+							<button type="button" class="close" data-dismiss="alert">
+								<i class="icon-remove"></i>
+							</button>
+							<i class="icon-ok blue"></i>
+							{{ sdata.panel.mess.closePages }}
+						
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-4 control-label no-padding-right" for="form-field-1"> {{ sdata.panel.form.panel }} </label>
+
+							<div class="col-sm-8">
+								<input name="switch-field-1" class="ace ace-switch ace-switch-7" type="checkbox" checked="checked"/>
+								<span class="lbl"></span>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-4 control-label no-padding-right" for="form-field-1">{{ sdata.panel.form.register }}</label>
+
+							<div class="col-sm-8">
+								<input name="switch-field-1" class="ace ace-switch ace-switch-7" type="checkbox" checked="checked"/>
+								<span class="lbl"></span>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-4 control-label no-padding-right" for="form-field-1"> {{ sdata.panel.form.login }} </label>
+
+							<div class="col-sm-8">
+								<input name="switch-field-1" class="ace ace-switch ace-switch-7" type="checkbox" checked="checked"/>
+								<span class="lbl"></span>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-4 control-label no-padding-right" for="form-field-1"> {{ sdata.panel.form.notifications }} </label>
+
+							<div class="col-sm-8">
+								<input name="switch-field-1" class="ace ace-switch ace-switch-7" type="checkbox" checked="checked"/>
+								<span class="lbl"></span>
+							</div>
+						</div>						
+					</div>
+				</form>
+			</div>
+		</div>
+	{% endblock %}
+
+	{% block script %}
+
+		<!--[if lte IE 8]>
+		  <script src="{{ asset('bundles/panel/js/excanvas.min.js') }}"></script>
+		<![endif]-->
+
+		<script src="{{ asset('bundles/panel/js/jquery-ui-1.10.3.custom.min.js') }}"></script>
+		<script src="{{ asset('bundles/panel/js/jquery.ui.touch-punch.min.js') }}"></script>
+		<script src="{{ asset('bundles/panel/js/chosen.jquery.min.js') }}"></script>
+		<script src="{{ asset('bundles/panel/js/fuelux/fuelux.spinner.min.js') }}"></script>
+		<script src="{{ asset('bundles/panel/js/date-time/bootstrap-datepicker.min.js') }}"></script>
+		<script src="{{ asset('bundles/panel/js/date-time/bootstrap-timepicker.min.js') }}"></script>
+		<script src="{{ asset('bundles/panel/js/date-time/moment.min.js') }}"></script>
+		<script src="{{ asset('bundles/panel/js/date-time/daterangepicker.min.js') }}"></script>
+		<script src="{{ asset('bundles/panel/js/bootstrap-colorpicker.min.js') }}"></script>
+		<script src="{{ asset('bundles/panel/js/jquery.knob.min.js') }}"></script>
+		<script src="{{ asset('bundles/panel/js/jquery.autosize.min.js') }}"></script>
+		<script src="{{ asset('bundles/panel/js/jquery.inputlimiter.1.3.1.min.js') }}"></script>
+		<script src="{{ asset('bundles/panel/js/jquery.maskedinput.min.js') }}"></script>
+		<script src="{{ asset('bundles/panel/js/bootstrap-tag.min.js') }}"></script>
+		<script src="{{ asset('bundles/panel/js/jquery.dataTables.min.js') }}"></script>
+		<script src="{{ asset('bundles/panel/js/jquery.dataTables.bootstrap.js') }}"></script>
+
+	{% endblock %}

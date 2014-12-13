@@ -1,0 +1,198 @@
+{% extends '::index.html.twig' %}
+{% block title %}
+    {{ sdata.panel.title.dash }}
+{% endblock %}
+{% block content %}
+    <div class="breadcrumbs" id="breadcrumbs">
+        <script type="text/javascript">
+            try {
+                ace.settings.check('breadcrumbs', 'fixed')
+            } catch (e) {
+            }
+        </script>
+
+        <ul class="breadcrumb">
+            <li>
+                <i class="icon-home home-icon"></i>
+                <a href="#">{{ sdata.panel.menu.dash }} </a>
+            </li>
+            <li class="active">{{ sdata.panel.menu.dash }} </li>
+        </ul><!-- .breadcrumb -->
+
+        <div class="nav-search" id="nav-search">
+            <form class="form-search">
+                <span class="input-icon">
+                    <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+                    <i class="icon-search nav-search-icon"></i>
+                </span>
+            </form>
+        </div><!-- #nav-search -->
+    </div>
+
+    <div class="page-content">
+        <div class="page-header">
+            <h1>
+                {{ sdata.panel.menu.dash }}
+                <small>
+                    <i class="icon-double-angle-right"></i>
+                    {{ sdata.panel.head.genLookGrap }}
+                </small>
+            </h1>
+        </div><!-- /.page-header -->
+        <div class="row">
+            <div class="alert alert-block alert-info">
+                <button type="button" class="close" data-dismiss="alert">
+                    <i class="icon-remove"></i>
+                </button>
+
+                <i class="icon-info fa-caret-right blue"></i>
+
+                {{ sdata.panel.mess.staRefrPage }}
+            </div>
+
+
+            <div class="col-sm-12 infobox-container">
+                <h3 class="header smaller lighter blue"> {{ sdata.panel.head.genLook }} </h3>
+
+                <div class="infobox infobox-blue  ">
+                    <div class="infobox-icon">
+                        <i class="icon-twitter"></i>
+                    </div>
+
+                    <div class="infobox-data">
+                        <span class="infobox-data-number">{{tweets | length }}</span>
+                        <div class="infobox-content">T. Tweet</div>
+                    </div>
+
+                    <div class="badge badge-success">
+                        +32%
+                        <i class="icon-arrow-up"></i>
+                    </div>
+                </div>
+
+                <div class="infobox infobox-blue  ">
+                    <div class="infobox-icon">
+                        <i class="icon-twitter"></i>
+                    </div>
+
+                    <div class="infobox-data">
+                        <span class="infobox-data-number">{{ packets | length }}</span>
+                        <div class="infobox-content">T. Paket</div>
+                    </div>
+
+                    <div class="badge badge-success">
+                        +32%
+                        <i class="icon-arrow-up"></i>
+                    </div>
+                </div>
+
+                <div class="infobox infobox-blue  ">
+                    <div class="infobox-icon">
+                        <i class="icon-twitter"></i>
+                    </div>
+
+                    <div class="infobox-data">
+                        <span class="infobox-data-number">{{ users | length }}</span>
+                        <div class="infobox-content">T. Kullanıcı</div>
+                    </div>
+
+                    <div class="badge badge-success">
+                        +32%
+                        <i class="icon-arrow-up"></i>
+                    </div>
+                </div>
+
+                <div class="infobox infobox-blue  ">
+                    <div class="infobox-icon">
+                        <i class="icon-twitter"></i>
+                    </div>
+
+                    <div class="infobox-data">
+                        <span class="infobox-data-number">1252</span>
+                        <div class="infobox-content">T. Gelir</div>
+                    </div>
+
+                    <div class="badge badge-success">
+                        +32%
+                        <i class="icon-arrow-up"></i>
+                    </div>
+                </div>
+
+                <div class="infobox infobox-blue  ">
+                    <div class="infobox-icon">
+                        <i class="icon-twitter"></i>
+                    </div>
+
+                    <div class="infobox-data">
+                        <span class="infobox-data-number">{{ apis | length }}</span>
+                        <div class="infobox-content">T. Api</div>
+                    </div>
+
+                    <div class="badge badge-success">
+                        +32%
+                        <i class="icon-arrow-up"></i>
+                    </div>
+                </div>
+
+                <div class="infobox infobox-blue  ">
+                    <div class="infobox-icon">
+                        <i class="icon-twitter"></i>
+                    </div>
+
+                    <div class="infobox-data">
+                        <span class="infobox-data-number">11</span>
+                        <div class="infobox-content">T. Ticket</div>
+                    </div>
+
+                    <div class="badge badge-success">
+                        +32%
+                        <i class="icon-arrow-up"></i>
+                    </div>
+                </div>
+
+                <div class="infobox infobox-blue  ">
+                    <div class="infobox-icon">
+                        <i class="icon-twitter"></i>
+                    </div>
+
+                    <div class="infobox-data">
+                        <span class="infobox-data-number">1254</span>
+                        <div class="infobox-content">Bugün T. User</div>
+                    </div>
+
+                    <div class="badge badge-success">
+                        +32%
+                        <i class="icon-arrow-up"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- /row -->
+    </div><!-- /.col -->
+{% endblock %}
+
+{% block script %}
+    <!--[if lte IE 8]>
+      <script src="assets/js/excanvas.min.js"></script>
+    <![endif]-->
+
+    <script src="{{ asset('bundles/panel/js/jquery-ui-1.10.3.custom.min.js') }}"></script>
+    <script src="{{ asset('bundles/panel/js/jquery.ui.touch-punch.min.js') }}"></script>
+    <script src="{{ asset('bundles/panel/js/jquery.slimscroll.min.js') }}"></script>
+    <script src="{{ asset('bundles/panel/js/jquery.easy-pie-chart.min.js') }}"></script>
+    <script src="{{ asset('bundles/panel/js/jquery.sparkline.min.js') }}"></script>
+    <script src="{{ asset('bundles/panel/js/flot/jquery.flot.min.js') }}"></script>
+    <script src="{{ asset('bundles/panel/js/flot/jquery.flot.pie.min.js') }}"></script>
+    <script src="{{ asset('bundles/panel/js/flot/jquery.flot.resize.min.js') }}"></script>
+
+    <!-- inline scripts related to this page -->
+
+    <script type="text/javascript">
+            jQuery(function($) {
+
+
+
+
+            })
+    </script>
+{% endblock %}

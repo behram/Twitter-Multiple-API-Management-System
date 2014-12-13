@@ -1,0 +1,157 @@
+{% extends '::index.html.twig' %}
+{% block title %}
+    {{ sdata.panel.title.tickets }}
+{% endblock %}
+{% block content %}
+    <div class="breadcrumbs" id="breadcrumbs">
+        <script type="text/javascript">
+            try {
+                ace.settings.check('breadcrumbs', 'fixed')
+            } catch (e) {
+            }
+        </script>
+
+        <ul class="breadcrumb">
+            <li>
+                <i class="icon-home home-icon"></i>
+                <a href="{{ path('acme_panel_homepage') }}">{{ sdata.panel.menu.dash }}</a>
+            </li>
+
+            <li class="active">
+                {{ sdata.panel.menu.tickets }}
+            </li>
+        </ul><!-- .breadcrumb -->
+
+        <div class="nav-search" id="nav-search">
+            <form class="form-search">
+                <span class="input-icon">
+                    <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off">
+                    <i class="icon-search nav-search-icon"></i>
+                </span>
+            </form>
+        </div><!-- #nav-search -->
+    </div>
+    <div class="page-content">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <h3 class="header smaller lighter blue">{{ sdata.panel.head.allTickets }}</h3>
+                <div class="table-responsive">
+                    <table id="sample-table-2" class="table table-striped table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th class="center">
+                                    <label>
+                                        <input type="checkbox" class="ace" />
+                                        <span class="lbl"></span>
+                                    </label>
+                                </th>
+                                <th>{{ sdata.panel.table.mailAdress }}</th>
+                                <th>{{ sdata.panel.table.head }}</th>
+                                <th>{{ sdata.panel.table.content }}</th>
+                                <th>{{ sdata.panel.table.ipAdress }}</th>
+                                <th>{{ sdata.panel.table.sendTime }}</th>
+                                <th>{{ sdata.panel.table.isResponded }}</th>
+                                <th>{{ sdata.panel.table.process }}</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            {% for v in tickets %}
+                            <tr>
+                                <td class="center">
+                                    <label>
+                                        <input type="checkbox" class="ace" />
+                                        <span class="lbl"></span>
+                                    </label>
+                                </td>
+                                <td>{{ v.senderMail }}</td>
+                                <td>{{ v.ticketHead }}</td>
+                                <td>{{ v.ticketContent }}</td>
+                                <td>{{ v.senderIp }}</td>
+                                <td>{{ v.sendTime }}</td>
+                                <td>{{ v.isResponsed }}</td>
+                                
+
+                                <td>
+                                    <div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
+                                        <a class="red" href="#" onclick="ajax('{{ path('acme_ticket_delete', { 'ticketId': v.entryId }) }}', 'bos', 'GET')" title="Ticket 'ı Sil">
+                                            <i class="icon-trash bigger-130"></i>
+                                        </a>
+                                        <a class="blue" href="#" onclick="ajax('{{ path('acme_ticket_finish', { 'ticketId': v.entryId }) }}', 'bos', 'GET')" title="İşlem Tamamlandı">
+                                            <i class="icon-check bigger-130"></i>
+                                        </a>   
+                                    </div>
+
+                                    <div class="visible-xs visible-sm hidden-md hidden-lg">
+                                        <div class="inline position-relative">
+                                            <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown">
+                                                <i class="icon-caret-down icon-only bigger-120"></i>
+                                            </button>
+
+                                            <ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
+                                                <li>
+                                                    <a href="#" class="tooltip-error" data-rel="tooltip" title="Delete" onclick="ajax('{{ path('acme_ticket_delete', { 'ticketId': v.entryId }) }}', 'bos', 'GET')">
+                                                        <span class="red">
+                                                            <i class="icon-trash bigger-120"></i>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block script %}
+
+    <script src="{{ asset('bundles/panel/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('bundles/panel/js/jquery.dataTables.bootstrap.js') }}"></script>
+    <script type="text/javascript">
+            window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
+    </script>
+    <script type="text/javascript">
+        jQuery(function($) {
+            var oTable1 = $('#sample-table-2').dataTable({
+                "aoColumns": [
+                    {"bSortable": false},
+                    null, null, null, null, null, null,
+                    {"bSortable": false}
+                ]});
+
+
+            $('table th input:checkbox').on('click', function() {
+                var that = this;
+                $(this).closest('table').find('tr > td:first-child input:checkbox')
+                        .each(function() {
+                            this.checked = that.checked;
+                            $(this).closest('tr').toggleClass('selected');
+                        });
+
+            });
+
+
+            $('[data-rel="tooltip"]').tooltip({placement: tooltip_placement});
+            function tooltip_placement(context, source) {
+                var $source = $(source);
+                var $parent = $source.closest('table')
+                var off1 = $parent.offset();
+                var w1 = $parent.width();
+
+                var off2 = $source.offset();
+                var w2 = $source.width();
+
+                if (parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2))
+                    return 'right';
+                return 'left';
+            }
+        })
+    </script>
+{% endblock %}

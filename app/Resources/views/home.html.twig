@@ -1,0 +1,75 @@
+<!doctype html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>{{ setting.siteTitle }}</title>
+    <meta name="description" content="{{ setting.siteDesc }}" />
+    <meta name="keywords" content="{{ setting.siteKeys }}" />
+    <link rel="icon" type="image/png" href="{{ setting.favicon }}">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'/>
+
+    <script type="text/javascript" src="{{ asset('bundles/home/js/jquery-1.9.1.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/home/js/bootstrap.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('bundles/home/css/style.css') }}" type="text/css" />
+    <link rel="stylesheet" href="http://bootswatch.com/spacelab/bootstrap.min.css" type="text/css" />
+
+    <!--Google Analitics Code-->
+    {{ setting.googleAnal |raw }}
+
+
+
+    <script type="text/javascript" src="{{ asset('bundles/home/js/function.js') }}"></script>
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">{{ setting.siteLogo }}</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="{{ path("acme_homepage")}}">{{ sdata.home.menu.homepage }}</a>
+            </li>
+            <li>
+              <a href="{{ path("acme_take_credit")}}">{{ sdata.home.menu.takecre }}</a>
+            </li>
+            <li>
+              <a href="{{ path("acme_take_follow")}}">{{ sdata.home.menu.takefoll }}</a>
+            </li>
+            <li>
+              <a href="{{ path("acme_take_retweet")}}">{{ sdata.home.menu.takeretw }}</a>
+            </li>
+            <li>
+              <a href="{{ path("acme_take_favorite")}}">{{ sdata.home.menu.takefav }}</a>
+            </li>
+            <li>
+              <a href="{{ path("acme_send_tweet")}}">{{ sdata.home.menu.masstweet }}</a>
+            </li>
+
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" target="_blank">{{ sdata.home.menu.about }}</a></li>
+            <li><a href="{{ path("acme_homepage_communication")}}" target="_blank">{{ sdata.home.menu.comm }}</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    {% block content %}
+
+    {% endblock %}
+    <!--
+    <div class="copyR">{{ setting.copyPlace }}</div>
+    -->
+</body>
+
+    <script type="text/javascript" src="{{ asset('bundles/home/js/site.js') }}"></script>
+
+</html>

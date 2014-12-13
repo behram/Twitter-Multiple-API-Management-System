@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title> Yönlendiriliyorsunuz...</title>
+        <style>
+            form{
+                display: none;
+            }
+        </style>
+    </head>
+    <body onLoad="javascript: submitform()" >
+        <span> Yönlendiriliyorsunuz... </span>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" name="toPaypal">
+            <input type="hidden" name="cmd" value="_xclick" >
+            <input type="hidden" name="business" value="{{ setting[0].paypalMail }}">
+            <input type="hidden" name="lc" value="TR">
+            <input type="hidden" name="item_name" value="{{ itemName }}">
+            <input type="hidden" name="button_subtype" value="services">
+            <input type="hidden" name="no_note" value="0">
+            <input type="hidden" name="currency_code" value="TRY">
+            <input type="hidden" value="{{ path("acme_payment_success") }}" name="return">
+            <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+            <table>
+                <tr><td><input type="hidden" name="on0" value="{{ itemName }}">Paket Satın Al</td></tr><tr><td><select name="os0">
+                            <option value="{{ packet[0].miktar ~ " " ~ itemName }}" selected="selected"></option>
+                        </select> </td></tr>
+            </table>
+            <input type="hidden" name="currency_code" value="TRY">
+            <input type="hidden" name="option_select0" value="{{ packet[0].miktar ~ " " ~ itemName }}">
+            <input type="hidden" name="option_amount0" value="{{ packet[0].tlKarsiligi }}.00">
+            <input type="image" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </form>
+    </body>
+    <script type="text/javascript">
+        function submitform()  {
+            document.forms["toPaypal"].submit();
+        }
+    </script>
+
+</html>

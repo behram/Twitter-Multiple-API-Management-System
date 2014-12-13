@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Acme\TwitterBundle\Entity\Tickets" table="tickets">
+    <id name="entryId" type="integer" column="entry_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="senderMail" type="string" column="sender_mail" length="300" nullable="false"/>
+    <field name="ticketHead" type="string" column="ticket_head" length="300" nullable="false"/>
+    <field name="ticketContent" type="string" column="ticket_content" length="700" nullable="false"/>
+    <field name="senderIp" type="string" column="sender_ip" length="30" nullable="false"/>
+    <field name="sendTime" type="integer" column="send_time" nullable="false"/>
+    <field name="senderSessions" type="text" column="sender_sessions" nullable="false"/>
+    <field name="isResponsed" type="boolean" column="is_responsed" nullable="false"/>
+  </entity>
+</doctrine-mapping>

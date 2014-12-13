@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Acme\TwitterBundle\Entity\SysPackets" table="sys_packets">
+    <id name="eid" type="integer" column="eid">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="miktar" type="integer" column="miktar" nullable="false"/>
+    <field name="paketTipi" type="string" column="paket_tipi" length="20" nullable="false"/>
+    <field name="tlKarsiligi" type="integer" column="tl_karsiligi" nullable="false"/>
+    <field name="isOnline" type="integer" column="is_online" nullable="false"/>
+    <field name="packetTypeInt" type="integer" column="packet_type_int" nullable="false"/>
+    <field name="time" type="integer" column="time" nullable="false"/>
+    <field name="creator" type="string" column="creator" length="50" nullable="false"/>
+    <field name="totalComing" type="string" column="total_coming" length="200" nullable="false"/>
+    <field name="extraInfo" type="string" column="extra_info" length="200" nullable="false"/>
+  </entity>
+</doctrine-mapping>

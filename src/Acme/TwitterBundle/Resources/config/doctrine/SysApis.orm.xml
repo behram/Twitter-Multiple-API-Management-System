@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Acme\TwitterBundle\Entity\SysApis" table="sys_apis">
+    <id name="apiId" type="integer" column="api_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="apiKey" type="string" column="api_key" length="100" nullable="false"/>
+    <field name="apiSecret" type="string" column="api_secret" length="200" nullable="false"/>
+    <field name="apiAccessLevel" type="string" column="api_access_level" length="55" nullable="false"/>
+    <field name="apiOwnerName" type="string" column="api_owner_name" length="50" nullable="false"/>
+    <field name="apiOwnerId" type="integer" column="api_owner_id" nullable="false"/>
+    <field name="apiOwnerAccessToken" type="string" column="api_owner_access_token" length="200" nullable="false"/>
+    <field name="apiOwnerTokenSecret" type="string" column="api_owner_token_secret" length="200" nullable="false"/>
+    <field name="apiAddTime" type="integer" column="api_add_time" nullable="false"/>
+    <field name="apiTotalUser" type="integer" column="api_total_user" nullable="false"/>
+    <field name="apiLastUse" type="integer" column="api_last_use" nullable="false"/>
+    <field name="apiCreatedBy" type="string" column="api_created_by" length="30" nullable="false"/>
+    <field name="apiName" type="string" column="api_name" length="60" nullable="false"/>
+    <field name="apiDescription" type="string" column="api_description" length="200" nullable="false"/>
+    <field name="apiWebsite" type="string" column="api_website" length="100" nullable="false"/>
+    <field name="apiCallbackUrl" type="string" column="api_callback_url" length="150" nullable="false"/>
+    <field name="apiLogo" type="string" column="api_logo" length="100" nullable="false"/>
+    <field name="apiLogoutUrl" type="string" column="api_logout_url" length="150" nullable="false"/>
+    <field name="apiExtraInfo" type="string" column="api_extra_info" length="300" nullable="false"/>
+  </entity>
+</doctrine-mapping>

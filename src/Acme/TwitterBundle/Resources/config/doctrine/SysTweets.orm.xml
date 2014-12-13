@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Acme\TwitterBundle\Entity\SysTweets" table="sys_tweets">
+    <id name="eId" type="integer" column="e_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="head" type="string" column="head" length="100" nullable="false"/>
+    <field name="content" type="string" column="content" length="200" nullable="false"/>
+    <field name="isOnline" type="integer" column="is_online" nullable="false"/>
+    <field name="addTime" type="integer" column="add_time" nullable="false"/>
+    <field name="totalPublish" type="integer" column="total_publish" nullable="false"/>
+    <field name="creator" type="string" column="creator" length="50" nullable="false"/>
+    <field name="image" type="string" column="image" length="100" nullable="false"/>
+    <field name="extraInfo" type="string" column="extra_info" length="200" nullable="false"/>
+  </entity>
+</doctrine-mapping>

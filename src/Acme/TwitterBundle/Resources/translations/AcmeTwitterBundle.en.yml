@@ -1,0 +1,239 @@
+panel :
+    title :
+        dash : Panel | DashBoard
+        tweets : Panel | Tweets
+        apis : Panel | Apis
+        system : Panel | System
+        tickets : Panel | Tickets
+        users : Panel | Users
+        packets : Panel | Packets
+        genset : Panel | General Settings
+        process :
+            fol : Panel | Process | Send Follower
+            fav : Panel | Process | Send Favorite
+            ret : Panel | Process | Send Retweet
+            masstweet : Panel | Process | Send Mass Tweet
+            dropsclean : Panel | Process | Drops Clean
+            updateImages :  Panel | Process | Update Images
+    menu : 
+        dash : Homepage
+        tweets : Tweets
+        apis : Apis
+        system : System
+        tickets : Tickets
+        users : Users
+        packets : Packets
+        genset : General Settings
+        process : Process
+        settings: Settings
+        profile : Profile
+        singOut : Singout
+        hello : Hello
+        processA :
+            fol : Send Follower
+            fav : Send Favorite
+            ret : Send Retweet
+            masstweet : Send Mass Tweet
+            dropsclean : Clean Drops
+            updateImages : Update Images
+    table :
+        head : Head
+        content : Content
+        tweet : Tweet
+        creator : Creator
+        addImage : Add Image
+        addTime : Add Time
+        totalSend : Total Send
+        extra : Extra
+        comment : Comment
+        extraInfo : Extra Info
+        process : Process
+        logo : Logo
+        entryId : Entry Id
+        secret : Secret
+        key : Key
+        accessLevel : Access Level
+        owner : Owner
+        mailAdress : Mail Adress
+        ipAdress : Ip Adress
+        sendTime : Send Time
+        isResponded : Is Responded   
+        userId : User Id
+        screenName : Screen Name
+        follCount : Follower Count
+        saveTime : Register Time
+        creditCount : Credit Count
+        memberedApis : Membered Apis
+        count : Count
+        type : Type
+        tl : TL
+        adder : Adder
+        totalComing : Total Coming
+        paypalMail : Paypal Mail
+        packetId : Packet Id
+        isFinish : Is Finished
+        wantValue : Wanted Value
+        sendToPaypalMail : Sended Paypal Mail 
+        packetType : Packet Type
+        display : Display
+        record : Record
+        showing : Showing
+        entries : Entries
+        search : Search
+        avatar : Avatar
+        isOnline : Is Online
+    form :
+        head : Head
+        sysLan : System Language
+        admUser : Admin Username
+        admPass : Admin Password
+        #7 haziran update
+        siteKeys : Site Keywords
+        googleAna : Google Analitics Code
+        favicon : Favicon
+        siteLogo : Site Logo  
+        siteTitle : Site Title
+        siteDesc : Site Description
+        copyrPlace : Copyright Place
+        homeBigPlace : Home Entry Words
+        siteFea1 : Site Features 1
+        siteFea2 : Site Features 2
+        siteFea3 : Site Features 3
+        siteFea4 : Site Features 4
+        siteFea5 : Site Features 5
+        siteFea6 : Site Features 6
+        siteFea7 : Site Features 7
+        siteFea8 : Site Features 8
+        LWTBut : Login With Twitter Button
+        HTaCreInfo  : Take Credit Infos
+        HTaFolInfo  : Take Follower Infos
+        HTaRetInfo  : Take Retweet Infos
+        HMaTweInfo  : Mass Tweet Infos
+        CommInfo  : Communication Infos
+        #7 haz.update finish
+        content : Content
+        extraInfo : Extra Info
+        imageAdd : Image Add
+        isOnline : Is Online
+        addTweet : Add Tweet
+        selectImage : Select Image
+        apiSecret : Api Secret
+        apiKey : Api Key
+        accessLevel : Access Level
+        addApi : Add Api 
+        on : On
+        off : Off
+        panel : Panel
+        register : Register
+        login : Login  
+        notifications : Notifications
+        questions : Questions
+        count : Count
+        packetType : Packet Type
+        costTl : Cost Tl
+        addPacket : Add Packet
+        siteHead : Site Head
+        siteTopHead : Site Top Head
+        siteBotHead : Site Bottom Head
+        homeApi : Homepage Api
+        systemLan : Sistem Dili
+        dailyCredit : Daily Credit
+        yourPaypalMail : Your Paypal Mail
+        otoTweet : Otomatic Tweet
+        otoFollow : Otomatic Follow
+        facePage : Facebook Page
+        twiPage : Twitter Page
+        update : Update
+        sourceApi : Source Api
+        followCount : Follower Count
+        perProfil : Person Profile
+        sendFollower : Follower Send
+        favCount : Favorite Count
+        tweetId : Tweet 's Id
+        sendFav : Send Favorite
+        retCount : Retweet Count
+        sendRet : Retweet Send
+        sendCount : Send Count
+        selectTweet : Select Tweet
+        sendTweet : Send Tweet
+        clear : Clear
+        adder : Adder
+        read : Read
+        readWrite : Read / Send Tweet
+        readWriteDm : Read / Send Tweet / Private Message
+        apiEdit : Api Edit
+        startSystem : Start System
+        stopSystem : Stop System
+        takeCredit : Take Credit
+    head : 
+        genLookGrap : General Look & Graphics
+        genLook : General Look
+        allTweets : All Tweets
+        addTweet : Add Tweet
+        allApis : All Apis
+        addApi : Add Api 
+        systemPos : Sistem Position
+        genPages : General Pages
+        allTickets : All Tickets
+        allUsers : All Users
+        allPackets : All Packets
+        addPacket : Add Packet
+        genSettings : General Settings
+        allPacketWant : All Packet Wants
+        sendFol : Send Follower
+        sendFav : Send Favorite
+        sendRet : Send Retweet
+        sendTwe : Send Tweet
+        clearDrops : Clear Drops
+        updateImages : Update Images
+    mess : 
+        staRefrPage:  "İstatislikler anlık yenilenmez o anki veriler için sayfayı yenilemeyi unutmayın"
+        systemUp : "System is working normally .There is not an error. System is working"
+        systemDown : "İt can be an error now. System has stopped"
+        closePages : "Burada bölümleri ayrı ayrı kapatabilirsiniz. Paneli kapattığınızda panele yalnızca adminler girebilir. Burada ayar yaparken çok dikkatli olmaya çalışın"
+        genInfoMessage : "You can do general settings from here"
+
+home :
+    menu :
+        homepage : Homepage
+        takecre : Take Credit
+        takefoll : Take Follower
+        takeretw : Take Retweet
+        takefav : Take Favorite
+        masstweet : Mass Tweet
+        about : About Us
+        comm : Contact
+    sentence : 
+        interest : Interests
+        finance : Finance
+        upevents : Current Events
+        news : News
+        holiday : Holiday
+        social : Social
+        art : Art
+        humanity : Humanity
+        copyr : "© 2014 Deepkod Freelance Group All rights reserved. TSystem uses the Twitter™ API and is not endorsed or certified by Twitter."
+        last22 : "Bizden daha fazla takipçi kazanan son 22 kişi"
+        usersSays: "Members Says"
+    head :
+        takeCre : Take Credit
+        takeFol : Take Follower
+        takeRet : Take Retweet
+        takeFav : Take Favorite
+        takeTwe : Send Mass Tweet
+        ticketCreate : Create Ticket
+        toInfo : Info
+    form : 
+        packetType : Packet Type
+        payMail : Paypal Mail
+        twiUserName : Twitter Screen Name
+        payWithPay : Paypal İle Öde
+        tweetId : Tweet 's Id
+        tweet : Tweet
+        youMail : Your Mail Adress
+        tickHead : Ticket Head
+        tickCont : Ticket Content
+        create : Create
+        
+    
+    

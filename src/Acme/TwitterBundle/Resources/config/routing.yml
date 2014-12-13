@@ -1,0 +1,284 @@
+acme_homepage:
+    pattern:  /
+    defaults: { _controller: AcmeTwitterBundle:Home:index }
+    methods:  [GET]
+
+acme_homepage_connect:
+    pattern:  /connect
+    defaults: { _controller: AcmeTwitterBundle:Connect:index }
+    methods:  [GET]
+
+acme_singout:
+    pattern:  /singout
+    defaults: { _controller: AcmeTwitterBundle:Connect:singout }
+    methods:  [GET]
+
+acme_process:
+    pattern:  /process
+    defaults: { _controller: AcmeTwitterBundle:Process:index }
+    methods:  [GET]
+
+acme_process_fsend:
+    pattern:  /process/followerSend
+    defaults: { _controller: AcmeTwitterBundle:Process:followerSend }
+    methods:  [POST]
+
+acme_homepage_communication:
+    pattern:  /communication
+    defaults: { _controller: AcmeTwitterBundle:Home:communication }
+    methods:  [GET]
+
+acme_homepage_communication_process:
+    pattern:  /communication/process
+    defaults: { _controller: AcmeTwitterBundle:Home:communicationProcess }
+    methods:  [POST]
+
+acme_ticket_delete:
+    pattern:  /panel/ticket/delete
+    defaults: { _controller: AcmeTwitterBundle:Ticket:delete }
+    methods:  [GET]
+    
+acme_ticket_finish:
+    pattern:  /panel/ticket/finish
+    defaults: { _controller: AcmeTwitterBundle:Ticket:finish }
+    methods:  [GET]
+    
+acme_aboutus:
+    pattern:  /aboutus
+    defaults: { _controller: AcmeTwitterBundle:Home:aboutus }
+    methods:  [GET]
+
+acme_packet_request:
+    pattern:  /packetrequest
+    defaults: { _controller: AcmeTwitterBundle:PacketRequest:index }
+    methods:  [POST]
+
+acme_request_delete:
+    pattern:  /requestDelete
+    defaults: { _controller: AcmeTwitterBundle:Tool:packetDelete }
+    methods:  [GET]
+    
+acme_request_finish:
+    pattern:  /requestFinish
+    defaults: { _controller: AcmeTwitterBundle:Tool:packetFinish }
+    methods:  [GET]
+
+acme_payment_success:
+    pattern:  /paymentsuccess
+    defaults: { _controller: AcmeTwitterBundle:PaymentSuccess:index }
+    methods:  [GET]
+
+acme_take_follow:
+    pattern:  /takefollow
+    defaults: { _controller: AcmeTwitterBundle:Form:takefollow }
+    methods:  [GET]
+    
+acme_take_credit:
+    pattern:  /takecredit
+    defaults: { _controller: AcmeTwitterBundle:Form:takecredit }
+    methods:  [GET]
+
+acme_take_retweet:
+    pattern:  /takeretweet
+    defaults: { _controller: AcmeTwitterBundle:Form:takeretweet }
+    methods:  [GET]    
+
+acme_take_favorite:
+    pattern:  /takefavorite
+    defaults: { _controller: AcmeTwitterBundle:Form:takefavorite }
+    methods:  [GET]
+    
+acme_send_tweet:
+    pattern:  /sendtweet
+    defaults: { _controller: AcmeTwitterBundle:Form:sendtweet }
+    methods:  [GET]
+
+acme_connect_detail:
+    pattern:  /connect/detail
+    defaults: { _controller: AcmeTwitterBundle:Connect:detail }
+    methods:  [GET]
+
+acme_homepage_callback:
+    pattern:  /callback
+    defaults: { _controller: AcmeTwitterBundle:Connect:callback }
+    methods:  [GET]
+
+acme_function_sendtweet:
+    pattern:  /panel/function/sendtweet
+    defaults: { _controller: AcmeTwitterBundle:Function:sendtweet }
+    methods:  [POST]
+
+acme_function_sendfollow:
+    pattern:  /panel/function/sendfollow
+    defaults: { _controller: AcmeTwitterBundle:Function:sendfollow }
+    methods:  [POST]
+
+acme_function_sendfavorite:
+    pattern:  /panel/function/sendfavorite
+    defaults: { _controller: AcmeTwitterBundle:Function:sendfavorite }
+    methods:  [POST]
+
+acme_function_retweet:
+    pattern:  /panel/function/retweet
+    defaults: { _controller: AcmeTwitterBundle:Function:retweet }
+    methods:  [POST]
+
+acme_function_cleardrops:
+    pattern:  /panel/function/cleardrops
+    defaults: { _controller: AcmeTwitterBundle:Function:cleardrops }
+    methods:  [POST]
+
+acme_panel_update_images:
+    pattern:  /panel/function/updateimages
+    defaults: { _controller: AcmeTwitterBundle:Function:updateImages }
+    methods:  [POST]
+    
+acme_function_credit:
+    pattern:  /panel/function/credit
+    defaults: { _controller: AcmeTwitterBundle:Function:credit }
+    methods:  [POST]
+    
+acme_function_randomusers:
+    pattern:  /panel/function/randomusers
+    defaults: { _controller: AcmeTwitterBundle:Function:randomusers }
+    methods:  [POST]
+
+acme_function_credit:
+    pattern:  /panel/function/credit
+    defaults: { _controller: AcmeTwitterBundle:Function:credit }
+    methods:  [POST]
+
+acme_panel_homepage:
+    pattern:  /panel/
+    defaults: { _controller: AcmeTwitterBundle:Dashboard:index }
+    methods:  [GET]
+
+acme_panel_tweet:
+    pattern:  /panel/tweet/
+    defaults: { _controller: AcmeTwitterBundle:Tweet:index }
+    methods:  [GET]
+
+acme_panel_tweet_add:
+    pattern:  /panel/tweet/add
+    defaults: { _controller: AcmeTwitterBundle:Tweet:add }
+    methods:  [POST]
+
+acme_panel_tweet_delete:
+    pattern:  /panel/tweet/delete/{tweetId}
+    defaults: { _controller: AcmeTwitterBundle:Tweet:delete }
+    methods:  [GET]
+
+acme_panel_api:
+    pattern:  /panel/api/
+    defaults: { _controller: AcmeTwitterBundle:Api:index }
+    methods:  [GET]
+
+acme_panel_api_add:
+    pattern:  /panel/api/add
+    defaults: { _controller: AcmeTwitterBundle:Api:add }
+    methods:  [POST]
+
+acme_panel_api_edit:
+    pattern:  /panel/api/edit
+    defaults: { _controller: AcmeTwitterBundle:Api:edit }
+    methods:  [POST]
+    
+acme_panel_api_delete:
+    pattern:  /panel/api/delete/{apiId}
+    defaults: { _controller: AcmeTwitterBundle:Api:delete }
+    methods:  [GET]
+
+acme_panel_generalsetting:
+    pattern:  /panel/generalsetting/
+    defaults: { _controller: AcmeTwitterBundle:GeneralSetting:index }
+    methods:  [GET]
+
+acme_panel_setting_update:
+    pattern:  /panel/generalsetting/update
+    defaults: { _controller: AcmeTwitterBundle:GeneralSetting:update }
+    methods:  [POST]
+    
+acme_panel_packet:
+    pattern:  /panel/packet/
+    defaults: { _controller: AcmeTwitterBundle:Packet:index }
+    methods:  [GET]
+    
+acme_panel_packet_add:
+    pattern:  /panel/packet/add
+    defaults: { _controller: AcmeTwitterBundle:Packet:add }
+    methods:  [POST]
+
+acme_panel_packet_delete:
+    pattern:  /panel/packet/delete/{packetId}
+    defaults: { _controller: AcmeTwitterBundle:Packet:delete }
+    methods:  [GET]
+    
+acme_panel_system:
+    pattern:  /panel/system/
+    defaults: { _controller: AcmeTwitterBundle:System:index }
+    methods:  [GET]
+    
+acme_panel_ticket:
+    pattern:  /panel/ticket/
+    defaults: { _controller: AcmeTwitterBundle:Ticket:index }
+    methods:  [GET]
+   
+acme_panel_users:
+    pattern:  /panel/users/
+    defaults: { _controller: AcmeTwitterBundle:Users:index }
+    methods:  [GET]
+
+acme_panel_user_delete:
+    pattern:  /panel/users/delete/{userId}
+    defaults: { _controller: AcmeTwitterBundle:Users:delete }
+    methods:  [GET]
+
+acme_panel_login:
+    pattern:  /panel/login/
+    defaults: { _controller: AcmeTwitterBundle:Login:index }
+    methods:  [GET]
+
+acme_panel_login_control:
+    pattern:  /panel/login/control
+    defaults: { _controller: AcmeTwitterBundle:Login:control }
+    methods:  [POST]
+
+acme_panel_logout:
+    pattern:  /panel/logout
+    defaults: { _controller: AcmeTwitterBundle:Login:logout }
+    methods:  [GET]
+    
+acme_panel_tool_dofavorite:
+    pattern:  /panel/tool/dofavorate/
+    defaults: { _controller: AcmeTwitterBundle:Tool:doFavorate }
+    methods:  [GET]
+    
+acme_panel_tool_sendfollower:
+    pattern:  /panel/tool/sendfollower
+    defaults: { _controller: AcmeTwitterBundle:Tool:sendFollower }
+    methods:  [GET]
+    
+acme_panel_tool_doretweet:
+    pattern:  /panel/tool/doretweet
+    defaults: { _controller: AcmeTwitterBundle:Tool:doRetweet }
+    methods:  [GET]
+    
+acme_panel_tool_sendtweet:
+    pattern:  /panel/tool/sendtweet
+    defaults: { _controller: AcmeTwitterBundle:Tool:sendTweet }
+    methods:  [GET]
+
+acme_panel_tool_dropclear:
+    pattern:  /panel/tool/dropclear
+    defaults: { _controller: AcmeTwitterBundle:Tool:dropClear }
+    methods:  [GET]
+
+acme_panel_tool_updateimages:
+    pattern:  /panel/tool/updateimages
+    defaults: { _controller: AcmeTwitterBundle:Tool:updateimages }
+    methods:  [GET]
+
+acme_panel_mail:
+    pattern:  /panel/mail/
+    defaults: { _controller: AcmeTwitterBundle:Mail:index }
+    methods:  [GET]

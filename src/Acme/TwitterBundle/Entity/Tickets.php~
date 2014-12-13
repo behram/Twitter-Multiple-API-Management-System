@@ -1,0 +1,74 @@
+<?php
+
+namespace Acme\TwitterBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Tickets
+ *
+ * @ORM\Table(name="tickets")
+ * @ORM\Entity
+ */
+class Tickets
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="entry_id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $entryId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="sender_mail", type="string", length=300, nullable=false)
+     */
+    private $senderMail;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="ticket_head", type="string", length=300, nullable=false)
+     */
+    private $ticketHead;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="ticket_content", type="string", length=700, nullable=false)
+     */
+    private $ticketContent;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="sender_ip", type="string", length=30, nullable=false)
+     */
+    private $senderIp;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="send_time", type="integer", nullable=false)
+     */
+    private $sendTime;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="sender_sessions", type="text", nullable=false)
+     */
+    private $senderSessions;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="is_responsed", type="boolean", nullable=false)
+     */
+    private $isResponsed;
+
+
+}

@@ -1,0 +1,57 @@
+{% extends '::home.html.twig' %}
+{% block content %}
+<div class="row">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10">
+        <div class="infoBox">
+            <div class="formHead">
+                <span>{{ sdata.home.head.toInfo }}</span>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">sizi takip edecek kişiler 100% gerçek hesap ve kişi lerdir</li>
+              <li class="list-group-item">Bütün alanları doldurmayı unutmayınız</li>
+              <li class="list-group-item">Paypal maili ile kullandığınız mail aynı olmak zorunda değildir</li>
+              <li class="list-group-item">Mail kesinlikle gerçek olmalıdır</li>
+              <li class="list-group-item">Sadece siz odaklı takipçi</li>
+              <li class="list-group-item">İlgi alanına göre kişi ve takipçiler.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-1"></div>
+</div>
+
+<div class="row">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10">
+
+        <div class="anaDiv">
+            <div class="formDiv">
+                <div class="formHead"><span> {{ sdata.home.head.ticketCreate }} </span></div>
+                <form class="formClass" method="post" action="{{ path("acme_homepage_communication_process") }}">
+                    {% if error is defined %}
+                        <div class="{{ error.class }}"> {{ error.text }} </div>
+                    {% endif %}
+                    <label> {{ sdata.home.form.youMail }} </label><br>
+                    <input type="text" name="userMail">
+                    
+                    <label> {{ sdata.home.form.tickHead }} </label><br>
+                    <input type="text" name="ticketHead">
+                    
+                    <label> {{ sdata.home.form.tickCont }} </label><br>
+                    <textarea spellcheck="false" name="proContent"></textarea>
+                    
+                    <input type="submit" value="{{ sdata.home.form.create }}">
+                    
+                </form>    
+            </div>
+            <div class="imageDiv">
+                <div class="imageContent">
+                    <img src="http://www.ciftlikdergisi.com.tr/wp-content/uploads/2014/03/twitter-follow.png" class="contentImage"/>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="col-xs-1"></div>
+    </div>
+{% endblock %}

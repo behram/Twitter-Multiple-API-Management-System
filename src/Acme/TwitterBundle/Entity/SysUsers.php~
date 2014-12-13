@@ -1,0 +1,172 @@
+<?php
+
+namespace Acme\TwitterBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * SysUsers
+ *
+ * @ORM\Table(name="sys_users")
+ * @ORM\Entity
+ */
+class SysUsers
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="user_entry_id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $userEntryId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="user_oauth_token", type="string", length=200, nullable=false)
+     */
+    private $userOauthToken;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="user_oauth_token_secret", type="string", length=200, nullable=false)
+     */
+    private $userOauthTokenSecret;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="user_twitter_id", type="integer", nullable=false)
+     */
+    private $userTwitterId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="user_screen_name", type="string", length=30, nullable=false)
+     */
+    private $userScreenName;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="user_entry_time", type="integer", nullable=false)
+     */
+    private $userEntryTime;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="user_screen_image", type="string", length=200, nullable=false)
+     */
+    private $userScreenImage;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="user_location", type="string", length=30, nullable=false)
+     */
+    private $userLocation;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="user_description", type="string", length=200, nullable=false)
+     */
+    private $userDescription;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="user_own_url", type="string", length=100, nullable=false)
+     */
+    private $userOwnUrl;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="user_followers_count", type="integer", nullable=false)
+     */
+    private $userFollowersCount;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="user_friends_count", type="integer", nullable=false)
+     */
+    private $userFriendsCount;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="user_created_at", type="integer", nullable=false)
+     */
+    private $userCreatedAt;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="user_favourites_count", type="integer", nullable=false)
+     */
+    private $userFavouritesCount;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="user_statuses_count", type="integer", nullable=false)
+     */
+    private $userStatusesCount;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="user_language", type="string", length=30, nullable=false)
+     */
+    private $userLanguage;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="user_last_modf_time", type="integer", nullable=false)
+     */
+    private $userLastModfTime;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="user_api_tweeted", type="integer", nullable=false)
+     */
+    private $userApiTweeted;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="user_api_favorated", type="integer", nullable=false)
+     */
+    private $userApiFavorated;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="user_creator_name", type="string", length=50, nullable=false)
+     */
+    private $userCreatorName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="user_membered_apis", type="string", length=100, nullable=false)
+     */
+    private $userMemberedApis;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="user_credit", type="integer", nullable=false)
+     */
+    private $userCredit;
+
+
+}

@@ -1,0 +1,102 @@
+<?php
+
+namespace Acme\TwitterBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * PacketRequest
+ *
+ * @ORM\Table(name="packet_request")
+ * @ORM\Entity
+ */
+class PacketRequest
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="eid", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $eid;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="user_mail", type="string", length=50, nullable=true)
+     */
+    private $userMail;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="packet_id", type="integer", nullable=false)
+     */
+    private $packetId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="paypal_mail", type="string", length=50, nullable=false)
+     */
+    private $paypalMail;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="insert_time", type="integer", nullable=false)
+     */
+    private $insertTime;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="is_finish", type="integer", nullable=false)
+     */
+    private $isFinish;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="process_value", type="string", length=200, nullable=false)
+     */
+    private $processValue;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="sent_time", type="integer", nullable=false)
+     */
+    private $sentTime;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="payment_mail", type="string", length=50, nullable=false)
+     */
+    private $paymentMail;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="packet_type", type="string", length=30, nullable=false)
+     */
+    private $packetType;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="user_twitter_name", type="string", length=60, nullable=true)
+     */
+    private $userTwitterName;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="sended_tweet_id", type="integer", nullable=true)
+     */
+    private $sendedTweetId;
+
+
+}

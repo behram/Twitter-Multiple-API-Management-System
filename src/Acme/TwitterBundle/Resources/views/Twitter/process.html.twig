@@ -1,0 +1,70 @@
+{% extends '::home.html.twig' %}
+{% block content %}
+
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10">
+            <div class="anaDiv">
+                <a href="{{ path("acme_singout") }}"><div class="singOut"> Çıkış Yap </div></a>
+                <div class="proMainDiv">
+                    <div class="col-xs-8">
+                        <h3 class="entry-word"> TSystem e Hoş Geldin <span>{{ session.added_user_screen_name }}</span></h3>
+                        <div class="imagesDiv">
+                            {% if session.user_credit > 0 %}
+                                {% for v in avatars %}
+                                    <img src="{{ v }}" >
+                                {% endfor %}
+                            {% else %}
+                                <center class="noCredit"> 
+                                    <span>Hiç Kredin Kalmamış</span> <br>
+                                    <span><a href="{{ path("acme_take_follow") }}">Takipçi Al</a></span><br>
+                                    <span><a href="{{ path("acme_take_credit") }}">Kredi Al</a></span>
+                                </center> 
+                            {% endif %}
+                        </div>
+
+                        <div class="detailDiv">
+                            {% if session.user_credit > 0 %}
+                                <button class="takeFollowButton" data-url="{{ path("acme_process_fsend") }}"> Takipçi Kazanmaya Başla </button>
+                                <!-- şuanlık liste yenileme yok olunca eklencek
+                                <span class="listRefresh"> &nbsp;Listeyi Yenile&nbsp;</span>
+                                <span> &nbsp;-&nbsp;</span>
+                                -->
+                                <span> &nbsp;Kişiler Yüklendi&nbsp; </span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="divContent">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Kullanıcı Adın</td>
+                                        <td>{{ session.added_user_screen_name }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kalan Kredin</td>
+                                        <td class="userCredit">{{ session.user_credit }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Takipçi Sayın</td>
+                                        <td class="followerCount">{{ session.follower_count }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- daha sonra yapılabilir
+                            <div class="class50 userDetail">Bugün Takip Eden</div>
+                            <div class="class50 userDetail ">100</div>
+                            -->
+                        </div>
+                        <div class="imageContent imageContent2">
+                            <img src="http://www.ciftlikdergisi.com.tr/wp-content/uploads/2014/03/twitter-follow.png" class="contentImage"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+{% endblock %}

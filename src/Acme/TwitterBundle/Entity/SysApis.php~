@@ -1,0 +1,151 @@
+<?php
+
+namespace Acme\TwitterBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * SysApis
+ *
+ * @ORM\Table(name="sys_apis")
+ * @ORM\Entity
+ */
+class SysApis
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="api_id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $apiId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="api_key", type="string", length=100, nullable=false)
+     */
+    private $apiKey;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="api_secret", type="string", length=200, nullable=false)
+     */
+    private $apiSecret;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="api_access_level", type="string", length=55, nullable=false)
+     */
+    private $apiAccessLevel;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="api_owner_name", type="string", length=50, nullable=false)
+     */
+    private $apiOwnerName;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="api_owner_id", type="integer", nullable=false)
+     */
+    private $apiOwnerId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="api_owner_access_token", type="string", length=200, nullable=false)
+     */
+    private $apiOwnerAccessToken;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="api_owner_token_secret", type="string", length=200, nullable=false)
+     */
+    private $apiOwnerTokenSecret;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="api_add_time", type="integer", nullable=false)
+     */
+    private $apiAddTime;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="api_total_user", type="integer", nullable=false)
+     */
+    private $apiTotalUser;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="api_last_use", type="integer", nullable=false)
+     */
+    private $apiLastUse;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="api_created_by", type="string", length=30, nullable=false)
+     */
+    private $apiCreatedBy;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="api_name", type="string", length=60, nullable=false)
+     */
+    private $apiName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="api_description", type="string", length=200, nullable=false)
+     */
+    private $apiDescription;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="api_website", type="string", length=100, nullable=false)
+     */
+    private $apiWebsite;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="api_callback_url", type="string", length=150, nullable=false)
+     */
+    private $apiCallbackUrl;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="api_logo", type="string", length=100, nullable=false)
+     */
+    private $apiLogo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="api_logout_url", type="string", length=150, nullable=false)
+     */
+    private $apiLogoutUrl;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="api_extra_info", type="string", length=300, nullable=false)
+     */
+    private $apiExtraInfo;
+
+
+}

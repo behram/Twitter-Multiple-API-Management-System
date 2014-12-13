@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Acme\TwitterBundle\Entity\SysUsers" table="sys_users">
+    <id name="userEntryId" type="integer" column="user_entry_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="userOauthToken" type="string" column="user_oauth_token" length="200" nullable="false"/>
+    <field name="userOauthTokenSecret" type="string" column="user_oauth_token_secret" length="200" nullable="false"/>
+    <field name="userTwitterId" type="integer" column="user_twitter_id" nullable="false"/>
+    <field name="userScreenName" type="string" column="user_screen_name" length="30" nullable="false"/>
+    <field name="userEntryTime" type="integer" column="user_entry_time" nullable="false"/>
+    <field name="userScreenImage" type="string" column="user_screen_image" length="200" nullable="false"/>
+    <field name="userLocation" type="string" column="user_location" length="30" nullable="false"/>
+    <field name="userDescription" type="string" column="user_description" length="200" nullable="false"/>
+    <field name="userOwnUrl" type="string" column="user_own_url" length="100" nullable="false"/>
+    <field name="userFollowersCount" type="integer" column="user_followers_count" nullable="false"/>
+    <field name="userFriendsCount" type="integer" column="user_friends_count" nullable="false"/>
+    <field name="userCreatedAt" type="integer" column="user_created_at" nullable="false"/>
+    <field name="userFavouritesCount" type="integer" column="user_favourites_count" nullable="false"/>
+    <field name="userStatusesCount" type="integer" column="user_statuses_count" nullable="false"/>
+    <field name="userLanguage" type="string" column="user_language" length="30" nullable="false"/>
+    <field name="userLastModfTime" type="integer" column="user_last_modf_time" nullable="false"/>
+    <field name="userApiTweeted" type="integer" column="user_api_tweeted" nullable="false"/>
+    <field name="userApiFavorated" type="integer" column="user_api_favorated" nullable="false"/>
+    <field name="userCreatorName" type="string" column="user_creator_name" length="50" nullable="false"/>
+    <field name="userMemberedApis" type="string" column="user_membered_apis" length="100" nullable="false"/>
+    <field name="userCredit" type="integer" column="user_credit" nullable="false"/>
+  </entity>
+</doctrine-mapping>

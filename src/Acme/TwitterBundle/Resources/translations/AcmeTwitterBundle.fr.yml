@@ -1,0 +1,214 @@
+panel :
+    title :
+        dash : Panneau | Tableau de Bord
+        tweets : Panneau | Tweets
+        apis : Panneau | Application
+        system : Panneau | Système
+        tickets : Panneau | Billets
+        users : Panneau | Utilisateurs
+        packets : Panneau | Paquets
+        genset : Panneau | Paramètres Généraux
+        process :
+            fol : Panneau | Processus | Envoyer Follower
+            fav : Panneau | Processus | Envoyer Favoris
+            ret : Panneau | Processus | Envoyer Retweet
+            masstweet : Panneau | Processus | Envoyer Collectif Tweet
+            dropsclean : Panneau | Processus | Tomber Propre
+            updateImages :  Panneau | Processus | Update Images
+    menu : 
+        dash : Homepage
+        tweets : Tweets
+        apis : Apis
+        system : System
+        tickets : Tickets
+        users : Users
+        packets : Packets
+        genset : General Settings
+        process : Processus
+        settings: Settings
+        profile : Profile
+        singOut : Singout
+        hello : Hello
+        processA :
+            fol : Envoyer Follower
+            fav : Envoyer Favorite
+            ret : Envoyer Retweet
+            masstweet : Envoyer Mass Tweet
+            dropsclean : Clean Drops
+            updateImages : Update Images
+    table :
+        head : Head
+        content : Content
+        tweet : Tweet
+        creator : Creator
+        addImage : Add Image
+        addTime : Add Time
+        totalSend : Total Envoyer
+        extra : Extra
+        comment : Comment
+        extraInfo : Extra Info
+        process : Processus
+        logo : Logo
+        entryId : Entry Id
+        secret : Secret
+        key : Key
+        accessLevel : Access Level
+        owner : Owner
+        mailAdress : Mail Adress
+        ipAdress : Ip Adress
+        sendTime : Envoyer Time
+        isResponded : Is Responded   
+        userId : User Id
+        screenName : Screen Name
+        follCount : Follower Count
+        saveTime : Register Time
+        creditCount : Credit Count
+        memberedApis : Membered Apis
+        count : Count
+        type : Type
+        tl : TL
+        adder : Adder
+        totalComing : Total Coming
+        paypalMail : Paypal Mail
+        packetId : Packet Id
+        isFinish : Is Finished
+        wantValue : Wanted Value
+        sendToPaypalMail : Envoyered Paypal Mail 
+        packetType : Packet Type
+        display : Display
+        record : Record
+        showing : Showing
+        entries : Entries
+        search : Search
+        avatar : Avatar
+        isOnline : Is Online
+    form :
+        head : Head
+        sysLan : System Language
+        admUser : Admin Username
+        admPass : Admin Password
+        content : Content
+        extraInfo : Extra Info
+        imageAdd : Image Add
+        isOnline : Is Online
+        addTweet : Add Tweet
+        selectImage : Select Image
+        apiSecret : Api Secret
+        apiKey : Api Key
+        accessLevel : Access Level
+        addApi : Add Api 
+        on : On
+        off : Off
+        panel : Panneau
+        register : Register
+        login : Login  
+        notifications : Notifications
+        questions : Questions
+        count : Count
+        packetType : Packet Type
+        costTl : Cost Tl
+        addPacket : Add Packet
+        siteHead : Site Head
+        siteTopHead : Site Top Head
+        siteBotHead : Site Bottom Head
+        homeApi : Homepage Api
+        dailyCredit : Daily Credit
+        yourPaypalMail : Your Paypal Mail
+        otoTweet : Otomatic Tweet
+        otoFollow : Otomatic Follow
+        facePage : Facebook Page
+        twiPage : Twitter Page
+        update : Update
+        sourceApi : Source Api
+        followCount : Follower Count
+        perProfil : Person Profile
+        sendFollower : Follower Envoyer
+        favCount : Favorite Count
+        tweetId : Tweet 's Id
+        sendFav : Envoyer Favorite
+        retCount : Retweet Count
+        sendRet : Retweet Envoyer
+        sendCount : Envoyer Count
+        selectTweet : Select Tweet
+        sendTweet : Envoyer Tweet
+        clear : Clear
+        adder : Adder
+        read : Read
+        readWrite : Read / Envoyer Tweet
+        readWriteDm : Read / Envoyer Tweet / Private Message
+        apiEdit : Api Edit
+        startSystem : Start System
+        stopSystem : Stop System
+        takeCredit : Take Credit
+    head : 
+        genLookGrap : General Look & Graphics
+        genLook : General Look
+        allTweets : All Tweets
+        addTweet : Add Tweet
+        allApis : All Apis
+        addApi : Add Api 
+        systemPos : Sistem Position
+        genPages : General Pages
+        allTickets : All Tickets
+        allUsers : All Users
+        allPackets : All Packets
+        addPacket : Add Packet
+        genSettings : General Settings
+        allPacketWant : All Packet Wants
+        sendFol : Envoyer Follower
+        sendFav : Envoyer Favorite
+        sendRet : Envoyer Retweet
+        sendTwe : Envoyer Tweet
+        clearDrops : Clear Drops
+        updateImages : Update Images
+    mess : 
+        staRefrPage : "İstatislikler anlık yenilenmez o anki veriler için sayfayı yenilemeyi unutmayın"
+        systemUp : "System is working normally .There is not an error. System is working"
+        systemDown : "İt can be an error now. System has stopped"
+        closePages : "Burada bölümleri ayrı ayrı kapatabilirsiniz. Panneaui kapattığınızda panele yalnızca adminler girebilir. Burada ayar yaparken çok dikkatli olmaya çalışın"
+        genInfoMessage : "You can do general settings from here"
+
+home :
+    menus :
+        homepage : Homepage
+        takecre : Take Credit
+        takefoll : Take Follower
+        takeretw : Take Retweet
+        takefav : Take Favorite
+        masstweet : Mass Tweet
+        about : About Us
+        comm : Communication
+    sentences : 
+        interest : Interests
+        finance : Finance
+        upevents : Current Events
+        news : News
+        holiday : Holiday
+        social : Social
+        art : Art
+        human : Humanity
+        copyr : "© 2014 Deepkod Freelance Group All rights reserved. TSystem uses the Twitter™ API and is not endorsed or certified by Twitter."
+        last22 : "Bizden daha fazla takipçi kazanan son 22 kişi"
+        usersSays: "What says members"
+    head :
+        takeCre : Take Credit
+        takeFol : Take Follower
+        takeRet : Take Retweet
+        takeFav : Take Favorite
+        takeTwe : Envoyer Mass Tweet
+        ticketCreate : Create Ticket
+        toInfo : Info
+    form : 
+        packetType : Packet Type
+        payMail : Paypal Mail
+        twiUserName : Twitter Screen Name
+        payWithPay : Paypal İle Öde
+        tweetId : Tweet 's Id
+        tweet : Tweet
+        youMail : Your Mail Adress
+        tickHead : Ticket Head
+        tickCont : Ticket Content
+        create : Create
+        
+    
+    

@@ -1,0 +1,5 @@
+# app/config/routing.yml
+acme_panel:
+    resource: "@AcmeTwitterBundle/Resources/config/routing.yml"
+    prefix:   /
+

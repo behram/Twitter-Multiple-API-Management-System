@@ -1,0 +1,235 @@
+panel:
+    title:
+        dash : Panel | Anasayfa
+        tweets : Panel | Tweetler
+        apis : Panel | Uygulamalar
+        system : Panel | Sistem
+        tickets : Panel | Ticketler
+        users : Panel | Kullanıcılar
+        packets : Panel | Paketler
+        genset : Panel | Genel Ayarlar
+        process :
+            fol : Panel | İşlemler | Takipçi Gönder
+            fav : Panel | İşlemler | Favori Gönder
+            ret : Panel | İşlemler | Retweet Gönder
+            masstweet : Panel | İşlemler | Toplu Tweet Gönder
+            dropsclean : Panel | İşlemler | Bırakanları Temizle
+            updateImages :  Panel | İşlemler | Resimleri Güncelle
+    menu : 
+        dash : Anasayfa
+        tweets : Tweetler
+        apis : Uygulamalar
+        system : Sistem
+        tickets : Destek Talepleri
+        users : Kullanıcılar
+        packets : Paketler
+        genset : Genel Ayarlar
+        process : İşlemler
+        settings: Ayarlar
+        profile : Profil
+        singOut : Çıkış Yap
+        hello : Merhaba
+        processA :
+            fol : Takipçi Gönder
+            fav : Favori Gönder
+            ret : Retweet Gönder
+            masstweet : Toplu Tweet Gönder
+            dropsclean : Bırakanları Temizle
+            updateImages : Resimleri Güncelle
+    table :
+        head : Başlık
+        content : İçerik
+        tweet : Tweet
+        creator : Oluşturan
+        addImage : Ek Resim
+        addTime : Eklenme Tarihi
+        totalSend : Toplam Gönderilme
+        extra : Ek Olarak
+        comment : Yorum
+        extraInfo : Ek Bilgi
+        process : İşlemler
+        logo : Logo
+        entryId : Giriş Id
+        secret : Secret
+        key : Anahtar
+        accessLevel : İzin Seviyesi
+        owner : Sahibi
+        mailAdress : Mail Adresi
+        ipAdress : Ip Adresi
+        sendTime : Gönderme Zamanı
+        isResponded : Cevaplandı Mı   
+        userId : Kullanıcı Id
+        screenName : Ekran Adı
+        follCount : Takipçi Sayısı
+        saveTime : Kayıt Tarihi
+        creditCount : Kredi Sayısı
+        memberedApis : Üye Oldu. Apiler
+        count : Miktar
+        type : Tipi
+        tl : TL
+        adder : Ekleyen
+        totalComing : Toplam Gelir
+        paypalMail : Paypal Mail
+        packetId : Paket Id
+        isFinish : Tamamlandı Mı
+        wantValue : İstek Değeri
+        sendToPaypalMail : Gön. Paypal Maili
+        packetType : Paket Tipi
+        display : Görüntüle
+        record : Kayıt
+        showing : Gösteriliyor
+        entries : Kayıt
+        search : Ara
+        avatar : Avatar
+        isOnline : Yayında Mı
+    form :
+        head : Başlık
+        sysLan : Sistem Dili
+        admUser : Admin Kullanıcı Adı
+        admPass : Admin Kullanıcı Şifre
+        #7 haziran update
+        siteKeys : Site Keywords
+        googleAna : Google Analitics Code
+        favicon : Favicon
+        siteLogo : Site Logosu
+        siteTitle : Site Başlığı
+        siteDesc : Site Açıklaması
+        copyrPlace : Copyright Yazısı
+        homeBigPlace : Anasayfa Büyük Yazı
+        siteFea1 : Site Özelliği Madde 1
+        siteFea2 : Site Özelliği Madde 2
+        siteFea3 : Site Özelliği Madde 3
+        siteFea4 : Site Özelliği Madde 4
+        siteFea5 : Site Özelliği Madde 5
+        siteFea6 : Site Özelliği Madde 6
+        siteFea7 : Site Özelliği Madde 7
+        siteFea8 : Site Özelliği Madde 8
+        LWTBut : Twitter İle Giriş Yap Butonu
+        HTaCreInfo  : Kredi Al Bilgilendirme
+        HTaFolInfo  : Takipçi Al Bilgilendirme
+        HTaRetInfo  : Retweet Al Bilgilendirme
+        HMaTweInfo  : Toplu Tweet Bilgilendirme
+        CommInfo  : İletişim Bilgilendirme
+        #7 haz.update finish
+        content : İçerik
+        extraInfo : Fazladan Bilgi
+        imageAdd : Resim Ekle
+        isOnline : Yayında Mı
+        addTweet : Tweeti Ekle
+        selectImage : Resim Seç
+        apiSecret : Uygulama Secret
+        apiKey : Uygulama Anahtarı
+        accessLevel : İzin Seviyesi
+        addApi : Uygulama Ekle
+        on : Açık
+        off : Kapalı
+        panel : Panel
+        register : Kayıt Ol
+        login : Giriş Yap    
+        notifications : Bildirimler
+        questions : Sorular
+        count : Miktar
+        packetType : Paket Tipi
+        costTl : Karşılık TL
+        addPacket : Paket Ekle
+        siteHead : Site Başlığı
+        siteTopHead : Site Üst Başlık
+        siteBotHead : Site Alt Başlık
+        homeApi : Anasayfa Uygulaması
+        systemLan : Sistem Dili
+        dailyCredit : Günlük Kredi
+        yourPaypalMail : Paypal Mail Adresin
+        otoTweet : Otomatik Tweetler
+        otoFollow : Otomatik Takip
+        facePage : Facebook Sayfası
+        twiPage : Twitter Page
+        update : Güncelle
+        sourceApi : Kaynak Api
+        followCount : Takipçi Sayısı
+        perProfil : Kişi Profili
+        sendFollower : Takipçi Gönder
+        favCount : Favori Sayısı
+        tweetId : Tweet Id 'si
+        sendFav : Favori Gönder
+        retCount : Retweet Sayısı
+        sendRet : Retweet Gönder
+        sendCount : Gönderme Sayısı
+        selectTweet : Tweet Seç
+        sendTweet : Tweet Gönder
+        clear : Temizle
+        adder : Oluşturan
+        read : Okuma
+        readWrite : Okuma / Tweet Atma
+        readWriteDm : Okuma / Tweet Atma / Özel Mesaj
+        apiEdit : Uygulama Düzenle
+        startSystem : Sistemi Çalıştır
+        stopSystem : Sistemi Durdur
+        takeCredit : Kredi Al
+    head : 
+        genLookGrap : Genel Bakış & Grafikler
+        genLook : Genel Bakıs
+        allTweets : Tüm Tweetler
+        addTweet : Tweet Ekle
+        allApis : Tüm Uygulamalar
+        addApi : Uygulama Ekle
+        systemPos : Sistem Durumu
+        genPages : Genel Bölümler
+        allTickets : Tüm Destek Talepleri
+        allUsers : Tüm Kullanıcılar
+        allPackets : Tüm Paketler
+        addPacket : Paket Ekle
+        genSettings : Genel Ayarlar
+        allPacketWant : Tüm Paket İstekleri
+        sendFol : Takipçi Gönder
+        sendFav : Favori Gönder
+        sendRet : Retweet Gönder
+        sendTwe : Tweet Gönder
+        clearDrops : Bırakanları Temizle
+        updateImages : Resimleri Güncelle
+    mess : 
+        staRefrPage : "İstatislikler anlık yenilenmez o anki veriler için sayfayı yenilemeyi unutmayın"
+        systemUp : "Sistem normal çalışıyor şuan bir problem yok. Sistem Çalışıyor"
+        systemDown : "Sistemde bir hata olabilir. Sistem Durdurulmuş"
+        closePages : "Burada bölümleri ayrı ayrı kapatabilirsiniz. Paneli kapattığınızda panele yalnızca adminler girebilir. Burada ayar yaparken çok dikkatli olmaya çalışın"
+        genInfoMessage : "Genel ayarları buradan yapabilirsiniz"
+home :
+    menu :
+        homepage : Anasayfa
+        takecre : Kredi Al
+        takefoll : Takipçi Al
+        takeretw : Retweet Al
+        takefav : Favori Al
+        masstweet : Toplu Tweet
+        about : Hakkımızda
+        comm : İletişim
+    sentence :
+        interest : İlgi Alanları
+        finance : Finans
+        upevents : Güncel Olaylar
+        news : Haberler
+        holiday : Tatil
+        social : Sosyal
+        art : Sanat
+        humanity : İnsanlık
+        copyr : "© 2014 Deepkod Freelance Group Bütün Hakları Saklıdır. Sistem Twitter Api 'yi kullanmaktadır ve Sistem twitter tarafından sertifika veya yardım almamaktadır."
+        last22 : "Sisteme Katılan Son Kullanıcılar"
+        usersSays: "Üyeler ne diyor"
+    head :
+        takeCre : Kredi Al
+        takeFol : Takipçi Al
+        takeRet : Retweet Al
+        takeFav : Favori Al
+        takeTwe : Toplu Tweet Gönder
+        ticketCreate : Destek Talebi Oluştur
+        toInfo : Bilgilendirme
+    form : 
+        packetType : Paket Tipi
+        payMail : Paypal Mail
+        twiUserName : Twitter Kullanıcı Adın
+        payWithPay : Paypal İle Öde
+        tweetId : Tweet Id 'si
+        tweet : Tweet
+        youMail : Mail Adresin
+        tickHead : Destek Talebi Başlığı
+        tickCont : Destek Talebi İçerik
+        create : Oluştur

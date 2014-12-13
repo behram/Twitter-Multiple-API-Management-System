@@ -1,0 +1,399 @@
+
+@charset "utf-8";
+
+body
+{
+background-image:url('http://inspirationhut3.inspirationhut.netdna-cdn.com/wp-content/uploads/2013/05/61.png');
+background-color:#cccccc;
+}
+
+a{
+    border: none;
+}
+a:hover{
+    border: none;
+    text-decoration: none;
+}
+body,html{
+	
+	margin : 0px;
+	padding : 0px;
+    overflow-x: hidden; 
+}
+
+.anaDiv{
+    width: 100%;
+    height: 540px;
+    margin-bottom: 15px;
+}
+.infoBox{
+    width: 100%;
+    height: auto;
+    background: white;
+    margin-bottom: 15px;
+    margin-top: 80px;
+}
+.infoBox ul{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 30px;
+    font-family: "opensans";
+    padding-bottom: 30px;
+    color: #333;
+
+}
+.infoBox .formHead{
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    height: 40px;
+    font-family: "opensans";
+    font-size: 20px;
+}
+.infoBox .formHead span{
+    border-bottom: #aaa 1px solid;
+    padding: 3px 15px 5px 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.formDiv{
+    background: #fff;
+    width: 50%;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    float: left;
+}
+.imageDiv{
+    background: #fff;
+    width: 50%;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    float: left;           
+}
+.formClass{
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 30px;
+}
+.formClass input,select,textarea{
+    height: 35px;
+    border: none;
+    width: 100%;
+    box-shadow: #ccc 0px 0px 5px inset;
+    margin-bottom: 20px;
+    padding-left: 3%;
+    font-family: "opensans";
+
+}
+.formClass select{
+    background: #fff;
+    width: 103%;
+}
+.formClass textarea{
+    height: 100px;
+}
+.formClass input[type=submit]{
+    background: #f5f5f5;
+    box-shadow: #ccc 0px 0px 0px inset;
+    width: 93%;
+    margin-left: 5%;
+    cursor: pointer;
+    border: #ccc 1px solid;
+
+}
+.formClass input:focus,textarea:focus{
+    border: rgb(0,200,255) 1px solid;
+}
+.formClass select:focus{
+    border: rgb(0,200,255) 1px solid;
+}
+.formDiv .formHead{
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    margin-top: 20px;
+    font-family: "opensans";
+    font-size: 20px;
+}
+.formDiv .formHead span{
+    border-bottom: #aaa 1px solid;
+    padding: 3px 15px 5px 15px;
+    border-radius: 20px;
+}
+.formDiv label{
+    font-family: "opensans";
+}
+.imageDiv .imageContent{
+    width: 80%;
+    margin: 10%;
+    height: 100%;
+    margin-top: 5%;
+}
+.imageContent .contentImage{
+    width: 100%;
+}
+.errorMessage{
+    width: 103%;
+    height: 35px;
+    line-height: 35px;
+    background: rgba(255,20,20,0.1);
+    border: rgba(255,20,20,0.8) 1px solid;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "opensans";
+    font-weight: 100;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.successMessage{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background: rgba(0,200,255,0.1);
+    border: rgba(0,200,255,0.8) 1px solid;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "opensans";
+    font-weight: 100;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.proMainDiv{
+    width: 100%;
+    height: 700px;
+    background: rgb(252,252,252);
+    margin-bottom: 15px;
+    margin-top: 80px;
+}
+.class75{
+    height: 100%;
+    width: 65%;
+    margin: 0px;
+    padding: 0px;   
+    float: left;
+    background: #f5f5f5;
+    padding-top: 20px;
+}
+.class50{
+    height: auto;
+    width: 50%;
+    margin: 0px;
+    padding: 0px; 
+    background: rgba(255,255,255,0.5);
+    position: relative;
+}
+.class502{
+    height: auto;
+    width: 50%;
+    margin: 0px;
+    padding: 0px; 
+    position: relative;
+}
+.class25{
+    height: 100%;
+    width: 35%;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+.divContent{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15%;
+}
+.class25 .divContent .userDetail{
+    font-family: "opensans";
+
+}
+.entry-word{
+    font-family: "opensans";
+    font-weight: 100;
+    line-height: 45px;
+    color: #444;
+    margin-left: 6%;
+}
+.entry-word span{
+    color: #000;
+    font-weight: 100;
+}
+.imagesDiv{
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+    margin-top: 1px;
+}
+.imagesDiv img{
+    margin: 2px;
+    width : 48px;
+}
+.detailDiv{
+    width: 85%;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 15px;
+}
+.detailDiv  .takeFollowButton{
+    float: left;
+    margin-left: 15px;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 5px;
+    background: orange;
+    padding: 0px 20px;
+    outline: 2px orange solid;
+    color: white;
+    border: 1px white dashed;
+    font-family: "opensans";
+    font-weight: 600;
+    font-size: 16px;
+}
+.detailDiv  .takeFollowButton:hover{
+    opacity: 0.8;
+}
+.detailDiv span{
+    float: right;
+    line-height: 35px;
+    font-family: "opensans";
+    font-weight: 600;
+}
+.detailDiv .listRefresh:hover{
+    background: #eee;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.imageContent2{
+    opacity: 0.8;
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 90%;
+}
+.singOut{
+    position: absolute;
+    top: 75px;
+    right: 28px;
+    cursor: pointer;
+    height: 25px;
+    border-radius: 2px;
+    line-height: 25px;  
+    padding: 0px 10px;
+    border: 1px #ddd solid;
+    color: #333;
+    font-family: "opensans";
+    font-weight: 100;
+    font-size: 13px;
+    margin: 20px;
+    background: white;
+    z-index: 9999;
+}
+
+.singOut:hover{
+    box-shadow: #eee 0px 0px 15px inset;
+}
+.noCredit span{
+    font-family: "opensans";
+    font-weight: 100;
+    font-size: 17px;
+    
+}
+
+.noCredit span a{
+    border-bottom: #aaa 1px solid;
+    padding: 3px 15px 5px 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background: #fefefe;
+    font-family: "opensans";
+    line-height: 40px;
+    font-weight: 100;
+    font-size: 19px;
+    color: #222255;
+}
+.noCredit span a:hover{
+    border-bottom: #898989 2px solid;
+    background: #fbfbfb;
+    color: #333;
+}
+
+        @font-face {font-family: 'opensans';font-style: normal;font-weight:100;src: local('opensans'), url('http://qupoo.com/opensans300.woff') format('woff');}
+        .packets{
+            width: 100%;
+            height: 60px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            padding: 0px;
+            background: #fefefe;
+        }
+        .packets .packet{
+            width: calc(12.5% - 1px);
+            height: calc(100% - 2px);
+            padding: 0px;
+            margin: 0px;
+            border-left: 1px #ddd solid;
+            border-top: 1px #ddd solid;
+            border-bottom: 1px #ddd solid;
+            float: left;
+            text-align: center;
+            line-height: 60px;
+            font-weight: 500;
+            font-size: 18px;
+            font-family: 'opensans';
+            cursor: pointer;
+            color: #222;
+        }
+        .packets .packet:hover{
+            box-shadow: 0px 0px 10px #e5e5e5 inset;
+            color: #555;
+        }
+.marginIt{
+
+    padding-top: 80px;
+}
+.listA{
+
+    margin-top: 65px;
+}
+.copyR{
+    position: fixed;
+    height: 50px;
+    width: 80%;
+    margin-left: 10%;
+    bottom: 0px;
+    left: 0px;
+}
+
+.buttonDiv{
+    height: 100px;
+}
+.backColor{
+
+    background: rgba(255,255,255,0.4);
+}
+.paddIt{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.loginBut{
+    margin-top: 50px !important;
+    margin-bottom: 20px !important;
+}
+
+.siteHead{
+
+    background: rgba(255,255,255,0.5);
+    border-radius: 15px;
+}
+
+.siteHead h2{
+    line-height: 50px !important;
+    font-family: "opensans";
+
+}
+.row{
+    overflow: hidden;
+}
