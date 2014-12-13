@@ -2,12 +2,12 @@ Twitter Multiple Api Management System
 ==================================
 Overview
 ------------
-You can manage multiple twitter api and this api 's users account detail in this project. Project  firstly devoloped by deepkod freelancers and sold with price. Now we decided opening source codes.  Have fun Boys. If you want develop we all time  wait for pull request :)
+You can manage multiple twitter api and this api 's users account detail in this project. Project  firstly devoloped by Deepkod Freelancer Group and sold with price. Now we decided opening source codes.  Have fun Boys. If you want develop we all time  wait for pull request :)
 
-Demo Site => http://demo.deepkod.com
-Demo Site Panel => http://demo.deepkod.com/panel
-Demo Panel Username => demo
-Demo  Panel Password => demo
+ - Demo Site => http://demo.deepkod.com
+ - Demo Site Panel => http://demo.deepkod.com/panel
+ - Demo Panel Username => demo
+ - Demo  Panel Password => demo
 
 Requirements
 ------------
